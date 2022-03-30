@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/fd8a827689.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+      <h1>TODOLIST</h1>
+    </header>
+  <div class="conteiner">
+    <main>
+      <div class="inputForm">
+        <input id="title" type="text">
+          <i type="button" id="add" class="fa-solid fa-square-plus"></i>
+          <i type="button" id="allDelete" class="fa-solid fa-trash"></i>
+      </div>
+      <p id="error-message" class="error-message"></p>
+      <div class="Content">
+        <div class="task">
+          <p>TASK</p>
+          <ul id="list"></ul>
+        </div>
+        <div class="cnp_task">
+          <p>CONPLETE</p>
+          <ul id="cnp_list"></ul>
+        </div>
+      </div>
+    </main>
+    <section id="modal" class="hidden">
+      <p>全てのタスクを削除しますか</p>
+      <button class="clabtn yes">はい</button>
+      <button class="clabtn no">いいえ</button>
+    </section>
+    <div id="mask" class="hidden">
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

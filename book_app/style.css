@@ -1,0 +1,32 @@
+.content {
+  width: 800px;
+  height: 500px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 50px;
+}
+
+td {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+.st_title {
+  width: 600px;
+}
+.st_authors {
+  width:200px ;
+}
+.st_image{
+  width: 600px;
+}
+input {
+  width: 200px;
+  height: 40px;
+}
+button {
+  width: 50px;
+  height: 50px
+}

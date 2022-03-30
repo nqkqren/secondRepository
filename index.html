@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fd8a827689.js" crossorigin="anonymous"></script>
+  <title>PORTFOLIO</title>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="container">
+        <h1><a href="#scroll_top">REN NAKAMOTO</a></h1>
+        <nav class="top_menu">
+          <ul>
+            <li><a href="#content_01">ABOUT</a></li>
+            <li><a href="#content_02">PORTFOLIO</a></li>
+            <li><a href="#">GITHUB</a></li>
+          </ul>
+        </nav>
+        <!--ドロアーメニュー-->
+        <button  type="button" class="drawer_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="drawer_nav">
+          <ul>
+            <li><a href="#content_01"></a>ABOUT</li>
+            <li><a href="#content_02"></a>PORTFOLIO</li>
+            <li>GITHUB</li>
+          </ul>
+        </nav>
+        <!--ここまでドロアーメニュー-->
+      </div>
+    </header>
+    <main>
+        <div class="top" id="scroll_top">
+          <h1>WELCOME TO MY PORTFOLI PAGE!!!</h1>
+          <h1></h1>
+          <p></p>
+          <p>僕のことをより深く知ってもらうためにJqueryを使用した webサイトを作りました。</p>
+        </div>
+      <div class="container">
+        <div class="about">
+          <div class="content" id="content_01">
+            <h2>ABOUT</h2>
+            <img src="rapper_tohji.jpg" alt="">
+            <p>仲本蓮</p>
+            <p>21才、沖縄県出身、飲食店スタッフ</p>
+            <p>沖縄工業高校を卒業したのちに、成田空港でグランドスタッフとして勤務、約二年半にわたって航空機への貨物の搭降載や航空機の誘導などの仕事をしてきました。その後は、飲食店のアルバイトスタッフとして今に至るまで勤務しています。</p>
+            <p>現在はwebのフロントエンドエンジニアになるために独学で勉強を続けています。HTML/CSS,javascripptを中心に学習し、一からwebアプリを作るということをしています。今作っているのは、誰でもオリジナルのクイズゲームが作れる「クイズメーカ」を作っています。</p>
+            <div class="diteile">
+              <p class="text">もっと見る<i class="fa-solid fa-sort-down slidedwon"></i></p>
+              <div class="accordion">
+                <h4>趣味</h4>
+                <p>ギターの弾き語り、映画鑑賞、音楽鑑賞、ランニング、ワンピースの考察、
+                </p>
+                <p>休みの日はnetflixで映画を見ます、多い時で1日で4本見ます。音楽は特に日本語ラップが好きでよく聴いています。漫画のワンピースが大好きで考察するのにハマっています</p>
+                <h4>特技</h4>
+                <p>自分の知っている曲なら、ギターで弾き語りすることができます。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio">
+          <div class="content" id="content_02">
+              <h2>PORTFOLIO</h2>
+              <P class="p_text">これまでに作成してきたもの</P>
+              <div class="apps">
+                <div class="app">
+                  <a href="quizu_app/index.html" class="app-icon">
+                    <p>クイズゲーム</p>
+                    <img src="quize.jpg">
+                  </a>
+                  <p class="text-contents">素のjavascriptを使って簡単なクイズゲームを作りました。変数、配列、条件分岐、繰り返し処理など基礎を学びました。
+                  </p>
+                </div>
+                <div class="app">
+                  <a href="book_app/index.html" class="app-icon">
+                    <p>本検索アプリ</p>
+                    <img src="bookApp.jpg">
+                  </a>
+                  <p class="text-contents">GoogelbooksApiを用いて本検索アプリを作りました。</p>
+                </div>
+                <div class="app">
+                  <a href="todo_app/index.html" class="app-icon">
+                    <p>TODOアプリ</p>
+                    <img src="todo.jpg">
+                  </a>
+                  <p class="text-contents">シンプルなTODOアプリを作りました。ライブラリにjqueryを使用しています。</p>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="follow-me">
+          <a href="#" class="social-icon" target='_blank'>
+            <i class="fa-brands fa-facebook-square"></i>
+          </a>
+          <a href="#" class="social-icon" target='_blank'>
+            <i class="fa-brands fa-twitter-square"></i>
+          </a>
+          <a href="#" class="social-icon" target='_blank'>
+            <i class="fa-brands fa-instagram-square"></i>
+          </a>
+          <a href="#" class="social-icon" target='_blank'>
+            <i class="fa-brands fa-github-square"></i>
+          </a>
+        </div>
+        <div class="copyright">
+          ©2022-ren nakamoto
+        </div>
+      </div>
+    </footer>
+  
+  
+    <script src="js/jquey.js"></script>
+    <script src="js/main.js"></script>
+  </div>
+  
+</body>
+</html>

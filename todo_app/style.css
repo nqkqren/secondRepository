@@ -1,0 +1,160 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: aliceblue;
+}
+
+.conteiner {
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  height: 100%;
+
+}
+header {
+  height: 100px;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+header h1 {
+  padding: 25px;
+  font-size: 35px;
+}
+main {
+
+}
+.inputForm {
+
+}
+.inputForm input {
+  width: 700px;
+  height: 40px;
+  font-size: 30px;
+}
+.inputForm i {
+  padding: 3px;
+}
+.inputForm  #add { /* add アイコン*/
+  font-size: 45px;
+  position: relative;
+  top: 7px;
+}
+.inputForm  #allDelete { /* delete アイコン*/
+  font-size: 40px;
+  position: relative;
+  top: 5px;
+}
+.error-message {
+  color: #F51414;
+  height: 20px;
+  padding-bottom: 50px;
+}
+/*タスク管理*/
+.Content {
+  display: flex;
+  margin: 0 auto;
+  z-index: 100;
+  width: 100%;
+}
+.Content p {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+ul {
+  display: block;
+  list-style: none;
+  width: 90%;
+}
+.Content li {
+  font-size: 25px;
+  width: 100%;
+  text-align: right;
+}
+.Content li span {
+  float: left;
+}
+.Content li i {
+  padding: 7px;
+  margin: 1px;
+}
+/*未 リスト*/
+.task {
+  width: 50%;
+  margin-left: 30px;
+}
+.Content li  #cnp {
+  color: chartreuse;
+  background-color: black;
+  border-radius: 50%;
+}
+.Content li  #delete {
+  font-size: 36px;
+  color: black;
+}
+/*ここまで*/
+/*完 リスト*/
+.cnp_task {
+  width: 50%;
+}
+#cnp_list li  #back {
+  color: aliceblue;
+  background-color: black;
+  border-radius: 50%;
+}
+#cnp_list li  #cnp_delete {
+  font-size: 36px;
+  color: black;
+}
+
+
+
+/*モーダルメニュー*/
+#modal {
+  width: 400px;
+  height: 160px;
+  color:black;
+  background-color: aliceblue;
+  margin: 0 auto;
+  position: absolute;
+  top: 210px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+#mask {
+  position: fixed;
+  background-color: rgba(0,0, 0,.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+#modal p {
+  padding: 30px;
+}
+#modal .clabtn {
+  padding: 20px;
+  margin: 10px;
+  display: inline;
+} 
+.hidden {
+  display: none;
+}
+/*ここまで*/
+
+
+
+
+
+
+
+
+
+
+
+

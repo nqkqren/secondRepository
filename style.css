@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  
+}
+.wrap {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+header {
+  background-color: rgba(234, 234, 241, 1);
+  height: 140px;
+  width: 100%;
+  text-align: center;
+  color: rgb(17, 16, 16);
+  position: fixed;
+}
+header h1 {
+  padding: 20px;
+  font-size: 50px;
+}
+header h1 a {
+  color: black;
+}
+
+.top_menu ul {
+  display: block;
+  float: right;
+  list-style: none;
+}
+.top_menu ul li {
+  display: inline;
+  padding-left:15px;
+}
+.top_menu ul li a {
+  color: rgb(8, 8, 8);
+}
+/*ここからドロアーメニューのcss*/
+.drawer_btn{
+  z-index: 999;
+  background-color:black;
+  width:70px;
+  height: 70px;
+  float: left;
+  position: relative;
+  z-index: 999;
+  border-radius: 5%;
+  margin-left:5px;
+  position: absolute;
+  top: 30px;
+  left:300px;
+}
+button span {
+  display: block;
+  width: 30px;
+  height: 2.8px;
+  background:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.4s ease;
+}
+.drawer_btn span:nth-child(1){
+  transform: translate(-50%,-12px);
+}
+.drawer_btn span:nth-child(2){
+  transform: translate(-50%,-50%);
+}
+.drawer_btn span:nth-child(3){
+  transform: translate(-50%,10px);
+}
+.drawer_nav{
+  width: 290px;
+  height: 100vh;
+  background: black;
+  transform: translate(-290px);
+  transition: transform.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+}
+.drawer_nav.open {
+  transform: translate(0);
+}
+.drawer_btn.active span:nth-child(1){
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.drawer_btn.active span:nth-child(2){
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+.drawer_btn.active span:nth-child(3){
+  transform: translate(-50%,-50%)rotate(-45deg);
+}
+/*ここまでドロアーメニューのcss*/
+main {
+  margin-top: 140px;
+  width: 100%;
+  height: 2200px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+main p {
+  font-size: 18px;
+}
+.top {
+  padding: 180px 0 100px 0;
+  background-image: url('00-1.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.top h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+.about {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.about h2 {
+  font-size: 50px;
+  padding: 10px;
+}
+.about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.diteile {
+  margin-top: 40px;
+}
+.diteile i {
+  margin-left: 30px;
+}
+.diteile .text {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(32, 31, 31);
+}
+
+
+.accordion {
+  background-color: rgb(32, 31, 31);
+  display: none;
+  padding: 20px;
+}
+.accordion h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.portfolio {
+  padding-bottom: 200px;
+}
+
+.portfolio  h2 {
+  font-size: 50px;
+  padding: 10px;
+}
+.p_text {
+
+}
+.apps {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+.app {
+  width:calc(100%/3);
+  display: inline-block;
+}
+.app-icon{
+  display: block;
+  margin: 65px;
+
+}
+.app p {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 50px;
+}
+.app img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
+.text-contents {
+  width: 80%;
+  display: none;
+}
+.text-active {
+  display: block;
+}
+footer {
+  background-color: rgba(234, 234, 241, 0.007);
+  height: 200px;
+  width: 100%;
+}
+.follow-me {
+  text-align: center;
+}
+.social-icon i {
+  font-size: 60px;
+  margin: 20px 40px;
+}
+.copyright {
+  position: relative;
+  left:450px;
+  top: 20px;
+}

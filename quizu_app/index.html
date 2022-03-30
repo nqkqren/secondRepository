@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クイズゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <h1>ONE PIECE クイズ</h1>
+      <div class="quiz_wrapper">
+        <h2 id="quesction">問題文</h2>
+        <!--同じidは複数使えないので代わりにclassをつける-->
+        <button class="choice open">1</button>
+        <button class="choice open">2</button>
+        <button class="choice open">3</button>
+        <button class="choice open">4</button>
+      </div>
+      <section id="modal" class="hidden">
+        <h3 id="judge">正解</h3>
+        <button id="close" >次へ</button>
+        <button id="relode" class="hidden" onclick="window.location.reload();">もう一度</button>
+      </section>
+      <div id="mask" class="hidden">
+      </div>
+
+      
+    </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
