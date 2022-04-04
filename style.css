@@ -53,7 +53,6 @@ header h1 a {
   height: 70px;
   float: left;
   position: relative;
-  z-index: 999;
   border-radius: 5%;
   margin-left:5px;
   position: absolute;
@@ -90,7 +89,18 @@ button span {
   top: 0;
   left: 0;
   color: white;
+  z-index: 100;
 }
+.drawer_nav li {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.drawer_nav li a {
+  text-decoration: none;
+  position: relative;
+  color: white;
+}
+
 .drawer_nav.open {
   transform: translate(0);
 }
